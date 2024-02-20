@@ -1,0 +1,198 @@
+* {
+    box-sizing: border-box;
+}
+
+body, h1, h2, h3, p {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+header, footer {
+    width: 100%;
+    background-color: #fff;
+    padding: 20px 0;
+}
+
+.header-footer-container {
+    width: 80%;
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    padding-left: 30px;
+}
+
+.logo {
+    width: auto;
+    height: 48px;
+    margin-right: 10px;
+}
+
+.brand-name {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.full-width-hero {
+    width: 100%;
+    background-color: #171427; 
+}
+
+.banner-box {
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto; 
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 20px;
+    color: #fff;
+}
+
+.banner-left, .banner-right {
+    padding: 10px;
+}
+
+.banner-left {
+    width: 60%;
+}
+
+.banner-right {
+    width: 38%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.banner-right .slogan {
+    font-size: 30px;
+    line-height: 1.4;
+}
+
+.banner-right a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    background-color: #357ABD;
+    color: #fff;
+    padding: 12px 24px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    font-size: 34px;
+    line-height: 1.4;
+    white-space: nowrap;
+}
+
+.banner-right a:hover {
+    background-color: #285A8E;
+}
+
+.main-image {
+    width: 100%;
+    border-radius: 0px; 
+}
+
+
+.banner-left .main-image {
+    width: 100%;
+}
+
+.section-header {
+    font-size: 40px; 
+    color: #C5C6D0; 
+    margin-bottom: 15px; 
+    font-weight: bold; 
+}
+
+.additional-text {
+    font-size: 26px; 
+    margin-top: 20px; 
+    color: #C5C6D0; 
+}
+
+.chrome-extension-link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    background-color: #357ABD;
+    color: #fff;
+    padding: 12px 20px; 
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    white-space: nowrap;
+    margin-top: 20px;
+}
+
+.chrome-extension-link:hover {
+    background-color: #285A8E;
+}
+
+.chrome-icon {
+    width: 50px; 
+    height: 50px;
+    vertical-align: middle;
+}
+
+
+.chrome-extension-link:hover {
+    background-color: #285A8E;
+}
+
+.chrome-icon {
+    width: 50px; 
+    height: 50px; 
+    vertical-align: middle; 
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+    .header-footer-container, .banner-box {
+        width: 90%; 
+    }
+
+    .banner-right .slogan, .banner-right a {
+        font-size: 20px; 
+    }
+}
+
+@media (max-width: 768px) {
+    .banner-box {
+        flex-direction: column;
+        padding: 20px 10px; 
+    }
+
+    .banner-left, .banner-right {
+        width: 100%; 
+        padding: 0;
+    }
+
+    .banner-right {
+        margin-top: 20px; 
+    }
+
+    .banner-right .slogan, .banner-right a {
+        text-align: center; 
+    }
+}
+
+@media (max-width: 480px) {
+    .header-footer-container, .banner-box {
+        width: 95%; 
+    }
+
+    .banner-right .slogan, .banner-right a {
+        font-size: 18px; 
+    }
+
+    .banner-right a {
+        padding: 8px 16px; 
+    }
+}
