@@ -1,5 +1,5 @@
 ---
 deployment:
   tasks:
-    - export DEPLOYPATH=/home/username/public_html/
+    - export DEPLOYPATH=/home/ncaa1f5/repositories/urldetail-website
     - /bin/cp index.html $DEPLOYPATH
