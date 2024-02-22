@@ -21,17 +21,19 @@
                 <img src="Images/hero-banner-img.jpg" alt="Main Image" class="main-image">
             </div>
             <div class="banner-right">
-                <h2 class="section-header">URL Detail - Secure & Informative Browsing</h2>
+                <h2 class="section-header">Secure & Informative Browsing</h2>
                 <p class="slogan">Unveil the true destination of web links with URL Detail. Secure your browsing by previewing URLs before you click.</p>
                 <a href="https://chrome.google.com/webstore/detail/url-detail/your-extension-id" target="_blank" class="chrome-extension-link">
                     <img src="Images/Google_Chrome_icon.png" alt="Chrome Logo" class="chrome-icon" width="20" height="20">
                     Get the Chrome Extension
                 </a>                
                 <p class="additional-text">Download now and enhance your browsing experience with URL Detail.</p>
+                <p class="no-user-info">URL Detail does not collect user information.</p>
             </div>
         </div>
     </div>
 
+    <!-- 4 box section -->
     <div class="features-section-bg">
         <div class="features-section">
             <div class="feature-box">
@@ -57,10 +59,24 @@
         </div>
     </div>
 
+    <!-- demo section -->
+    <div class="demo-section-bg">
+        <div class="demo-section">
+            <h2 class="demo-header">Demo the Extension Here</h2>
+            <p class="demo-description">Hover over the links below to see a simulated preview of how the URL Detail extension works. Experience real-time URL previews without leaving your current page.</p>
+            <div class="demo-content">
+                <a href="#" target="_blank" class="demo-link" id="linkGoogle">Google.com</a>
+                <a href="#" target="_blank" class="demo-link" id="linkExample">Suspicious Link</a>
+            </div>
+        </div>
+    </div>
+    
     <footer>
-        <div class="container header-footer-container">
-            &copy; URL Detail 2024
+        <div class="container header-footer-container footer-content">
+            &copy; <span id="currentYear"></span> URL Detail. All rights reserved.
         </div>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>

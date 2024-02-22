@@ -17,13 +17,14 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-bottom: 30px;
+    padding-bottom: 20px;
 }
 
 footer {
     width: 100%;
     background-color: #fff;
     padding: 20px 0;
+    color: #171427; 
 }
 
 .header-footer-container {
@@ -35,6 +36,15 @@ footer {
     padding-top: 30px;
     padding-left: 10px;
     justify-content: center;
+}
+
+.footer-content {
+    text-align: center;
+    font-size: 20px;
+    width: 100%;
+    margin: auto;
+    padding: 10px 0; 
+    font-weight: 100;
 }
 
 .logo {
@@ -125,7 +135,7 @@ footer {
 .additional-text {
     font-size: 26px; 
     margin-top: 20px; 
-    color: #C5C6D0; 
+    color: #fff; 
 }
 
 .chrome-extension-link {
@@ -162,6 +172,12 @@ footer {
     width: 50px; 
     height: 50px; 
     vertical-align: middle; 
+}
+
+.no-user-info {
+    color: #fff; 
+    font-size: 20px; 
+    margin-top: 20px;
 }
 
 /* Responsive */
@@ -210,7 +226,6 @@ footer {
 }
 
 /* features section */
-
 .features-section-bg {
     background-color: #f0f0f0;
 }
@@ -234,9 +249,12 @@ footer {
 }
 
 .feature-box img {
-    width: 50px; 
-    height: auto; 
-    margin-bottom: 10px; 
+    width: 50px;
+    height: auto;
+    margin-bottom: 10px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 @media (max-width: 768px) {
@@ -256,3 +274,79 @@ footer {
         margin: 10px 0;
     }
 }
+
+/* demo seciton */
+.demo-section-bg {
+    background-color: #171427;
+    padding: 20px 0;
+}
+
+.demo-section {
+    max-width: 1400px;
+    margin: auto;
+    padding: 25px;
+    background-color: #fff;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.demo-header {
+    color: #357ABD;
+    margin-bottom: 20px;
+    font-size: 32px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.demo-description {
+    color: #171427;
+    margin-bottom: 30px;
+    font-size: 18px;
+    max-width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.demo-content {
+    margin-top: 20px;
+}
+
+.demo-link {
+    display: inline-block;
+    margin: 10px;
+    color: #171427;
+    text-decoration: none;
+    padding: 15px 30px;
+    border: 2px solid #FF0000; 
+    border-radius: 5px; 
+    transition: background-color 0.3s ease;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.demo-link:hover {
+    background-color: #f8f8f8; 
+}
+
+/* hover window */
+#linkHoverInfoWindow {
+    padding: 8px 12px;
+    background-color: rgba(0, 0, 0, 0.90);
+    color: white;
+    border-radius: 4px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    z-index: 10000;
+    display: none;
+    max-width: 300px;
+    word-wrap: break-word;
+    border: 1px solid #ccc;
+    position: absolute; 
+}
+
+.highlighted-domain {
+    font-weight: bold;
+    color: #007bff; 
+}
+
