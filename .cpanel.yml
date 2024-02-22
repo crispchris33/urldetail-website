@@ -1,5 +1,9 @@
 ---
 deployment:
   tasks:
-    - export DEPLOYPATH=/home/ncaa1f5/repositories/urldetail-website
+    - export DEPLOYPATH=/home/ncaa1f5/public_html/urldetail-website
     - /bin/cp index.html $DEPLOYPATH
+    - /bin/cp style.css $DEPLOYPATH
+    - /bin/cp script.js $DEPLOYPATH
+    - /bin/cp .htaccess $DEPLOYPATH
+    - /bin/cp -R Images $DEPLOYPATH/Images
