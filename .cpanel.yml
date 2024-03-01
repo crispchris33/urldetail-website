@@ -7,3 +7,4 @@ deployment:
     - /bin/cp script.js $DEPLOYPATH
     - /bin/cp .htaccess $DEPLOYPATH
     - /bin/cp -R Images $DEPLOYPATH/Images
+    - /bin/cp privacy.html $DEPLOYPATH
